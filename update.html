@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Update Notification</title>
+    <style>
+        body{background:#f3f4f6;font-family:'Segoe UI',sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;margin:0;}
+        #notification{background:white;border-radius:12px;padding:20px;width:400px;box-shadow:0 10px 20px rgba(0,0,0,0.2);display:block;opacity:1;transition:opacity 0.4s;}
+        h2{margin:0;font-size:22px;color:#333;}
+        p{font-size:16px;color:#555;margin:10px 0;line-height:1.6;}
+        a{color:#007bff;font-weight:bold;transition:color 0.3s;}
+        a:hover{color:#0056b3;}
+        .close-btn{position:absolute;top:10px;right:10px;background:#007bff;border-radius:50%;width:20px;height:20px;color:#fff;display:flex;justify-content:center;align-items:center;cursor:pointer;transition:background 0.3s;}
+        .close-btn:hover{background:#0056b3;}
+    </style>
+</head>
+<body>
+    <div id="notification">
+        <span class="close-btn">&times;</span>
+        <h2>Browser Update Required</h2>
+        <p>Please update your browser to the latest version. Click <a href="http://example.com/update">here</a> to update your browser.</p>
+    </div>
+</body>
+</html>
